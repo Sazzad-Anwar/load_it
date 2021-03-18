@@ -1,0 +1,289 @@
+/*===================
+body
+===================*/
+body{
+  //overflow-y:hidden;
+  &.nav-opened{
+    overflow-y:hidden;
+  }
+}
+p{
+  //line-height: 28px;
+}
+h2,h3{
+  font-weight: $semiBold;
+}
+
+.wow{
+  visibility:hidden;
+}
+
+
+.section{
+  padding:40px 0;
+  position: relative;
+  @include media("desktopSmall"){
+    padding:60px 0;
+  }
+}
+.bg-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.input-group{
+  &.download-link-field{
+    .input-group-prepend{
+      .input-group-text{
+        background-color: #fff;
+        padding-right:0px;
+        border:0;
+      }
+    }
+    select{
+      height:auto;
+      border:0;
+      background-color:#fff;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    input.form-control{
+      height:auto;
+      padding-left:0;
+      border:0;
+    }
+    .input-group-append{
+      .input-group-text{
+        border-color:$background-yellow;
+        background-color: $background-yellow;
+        color:#fff;
+        padding-left:25px;
+        padding-right:25px;
+        &:hover{
+          background-color: $background-footer;
+          border-color:$background-footer;
+        }
+      }
+    }
+    .input-group-text{
+      padding-top:8px;
+      padding-bottom:8px;
+    }
+
+
+  }
+  .input-group-text{
+    border-radius:10px;
+  }
+}
+.btn-holder{
+  a,button{
+    margin-right:10px;
+    &:last-child{
+      margin:0;
+    }
+  }
+}
+
+.hover-translate-y{
+  display: inline-block;
+  transition: 0.2s transform ease;
+  &:hover{
+    transform:translateY(-3px);
+    transition: 0.2s transform ease;
+  }
+}
+
+.social-nav{
+  list-style: none;
+  li{
+    a{
+
+    }
+  }
+}
+
+.col-1-5{
+  flex:0 0 100%;
+  max-width:100%;
+  padding-left:15px;
+  padding-right:15px;
+  @include media("smallEnd"){
+    flex:0 0 50%;
+    max-width:50%;
+  }
+
+  @include media("tabletPortrait"){
+    flex:0 0 33.3333%;
+    max-width:33.3333%;
+  }
+
+  @include media("desktopSmall"){
+    flex:0 0 20%;
+    max-width:20%;
+  }
+}
+
+.app-btn{
+  a{
+    img{
+      transition:0.4s transform ease;
+    }
+    &:hover{
+      img{
+        transform:translateY(-2px);
+        transition:0.4s transform ease;
+      }
+    }
+  }
+}
+
+/*===================
+BANNER
+===================*/
+.banner{
+  position: relative;
+  img{
+    //max-width:500px;
+  }
+}
+
+.image{
+  img{
+
+  }
+  &.img-cover{
+    img{
+      object-fit: cover;
+    }
+  }
+}
+.img-radius-10{
+  border-radius:10px;
+}
+
+.img-shadow{
+  box-shadow:0 0 15px rgba(0, 0, 0, 0.40);
+}
+/*===================
+SERVICE
+===================*/
+.service-box{
+  border-radius:15px;
+  padding:30px 10px;
+  background-color: rgba(67, 71, 71, 0.90);
+  position: relative;
+  min-height: 176px;
+  overflow: hidden;
+  margin-bottom:20px;
+  cursor:default;
+
+  &-content{
+    position: relative;
+    z-index: 9;
+  }
+
+  &.bg-yellow{
+    background-color: rgba(234, 175, 48, 0.90);
+    &:hover{
+      background-color: $background-yellow;
+    }
+  }
+
+  .bg-layer{
+    position: absolute;
+    width:100%;
+    top:0;
+    bottom:0;
+    left:-35px;
+  }
+
+  .service-title{
+    font-family: "All Round Gothic W03 Book",sans-serif;
+    padding-top:8px;
+    line-height: 1.2;
+  }
+
+  &:hover{
+    background-color: #434747;
+    .bg-layer{
+      img{
+        opacity: 0;
+      }
+    }
+  }
+
+  @include media("desktopSmall"){
+    margin-bottom:40px;
+  }
+}
+
+.last-row{
+  .service-box{
+    @include media("desktopSmall"){
+      margin-bottom:0;
+    }
+  }
+}
+.service-row{
+  @include media("desktopSmall"){
+    margin-left:-25px;
+    margin-right:-25px;
+    .col-1-5{
+      padding-left:28px;
+      padding-right:28px;
+    }
+  }
+
+}
+
+
+/*===================
+APP SCREEN
+===================*/
+.screens-slider-holder{
+  .swiper-button-next:after, .swiper-button-prev:after{
+    display: none;
+  }
+}
+
+
+
+
+  /*===================
+  DOWNLOAD APP
+  ===================*/
+  .section-download{
+    .download-left{
+
+    }
+    .btn-holder{
+      a{
+        img{
+          //max-width:120px;
+        }
+      }
+    }
+
+    &.bg-less{
+      .input-group-prepend{
+        border: 1px solid #ddd;
+        border-radius: 10px 0 0 10px;
+      }
+      input.form-control{
+        border:1px solid #ddd;
+        border-left:0;
+        border-right:0;
+      }
+    }
+  }
+
+
+
+
+/*===================
+section section
+===================*/

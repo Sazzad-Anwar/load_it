@@ -1,0 +1,21 @@
+.form{
+  &-group{
+
+  }
+  &-control{
+    border-radius:0;
+    height:45px;
+    background-clip:border-box;
+    border:1px solid #c7c7c7;
+
+    &:focus,
+    &:hover{
+      box-shadow:none;
+      outline:none;
+    }
+  }
+}
+
+textarea.form-control{
+  height:auto;
+}

@@ -1,0 +1,36 @@
+//RESPONSIVE MIXINGS
+//variable
+$xsmall:320px;
+$smallEnd:576px;
+$tabletPortrait:768px;
+$tabletPortraitEnd:992px;
+$tabletEnd:1024px;
+$desktopSmall:1200px;
+$desktopMedium:1600px;
+$desktopLarge:1920px;
+
+@function translate-media-condition($c){
+  $conditionMap:(
+          "screen":"only screen",
+          "smallEnd":"(min-width:#{$smallEnd})",
+          "tabletPortrait":"(min-width:#{$tabletPortrait})",
+          "tabletPortraitEnd":"(min-width:#{$tabletPortraitEnd})",
+          "tabletEnd":"(min-width:#{$tabletEnd})",
+          "desktopSmall":"(min-width:#{$desktopSmall})",
+          "desktopMedium":"(min-width:#{$desktopMedium})"
+  );
+  @return map_get($conditionMap, $c);
+}
+
+// THE MEDIA MIXIN
+@mixin media($args...) {
+  $query: "";
+  @each $arg in $args {
+    $op: "";
+    @if ( $query != "" ) {
+      $op: " and ";
+    }
+    $query: $query + $op + translate-media-condition($arg);
+  }
+  @media #{$query}  { @content; }
+}

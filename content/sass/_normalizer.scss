@@ -1,0 +1,36 @@
+/*Normallizing*/
+*{
+  padding:0;
+  margin:0;
+  /*transition:all 0.3s linear;*/
+}
+html,body{
+  font-family:'avenir-light',sans-serif;
+  font-size:16px;
+  line-height: 24px;
+  box-sizing:border-box;
+  background-color: transparent;
+  color:$text-black;
+}
+p{
+
+}
+a{
+  color:#202020;
+  text-decoration:none;
+  cursor: pointer;
+  &:hover{
+    text-decoration: none;
+    color: rgba(32, 32, 32, 0.82);
+  }
+}
+p,h1,h2,h3,h4,h5,h6,ol,ul,div{
+  margin:0;
+  padding:0;
+  //color:$primary-color;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:'All Round Gothic W03 Demi',sans-serif;
+}
+/*Normallizing*/
+

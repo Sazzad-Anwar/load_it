@@ -1,0 +1,15 @@
+{
+  "name": "loadit",
+  "version": "1.0.0",
+  "description": "loadit website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch content/sass:content/css"
+  },
+  "keywords": [
+    "loadit"
+  ],
+  "author": "royex.ae",
+  "license": "ISC"
+}

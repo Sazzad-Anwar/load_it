@@ -1,0 +1,159 @@
+/*====================
+utility classes
+====================*/
+
+//bg-color
+.bg-grey{
+  background-color: #f9f9f9;
+}
+.bg-image{
+  background-repeat: no-repeat;
+  &.left-center{
+    background-position: left center;
+  }
+}
+.bg-cover{
+  background-size: cover;
+  &.top{
+    background-position: top;
+  }
+  &.center{
+    background-position:center;
+  }
+}
+
+//text
+.paragraph{
+  p{
+    margin-bottom:15px;
+    &:last-child{
+      margin-bottom:0;
+    }
+  }
+}
+
+
+.section-title{
+  font-size:24px;
+  line-height: 1.2;
+  margin-bottom:15px;
+  text-transform:capitalize;
+  span{
+    display: block;
+  }
+  position: relative;
+  @include media("tabletPortraitEnd"){
+    font-size:32px;
+    margin-bottom:25px;
+  }
+}
+
+.font-26{
+  font-size:26px;
+  line-height: 1.2;
+}
+
+.font-regular{
+  font-weight: $regular;
+}
+
+.font-semibold{
+  font-weight: $semiBold;
+}
+.font-medium{
+  font-weight: $medium;
+}
+.font-bold{
+  font-weight:$bold;
+}
+
+.font-26{
+  font-size:26px;
+}
+.font-18{
+  font-size:18px;
+}
+.font-20{
+  font-size:20px;
+}
+
+.font-22{
+  font-size:20px;
+  @include media("desktopSmall"){
+    font-size:22px;
+  }
+}
+
+.font-36{
+  font-size:26px;
+  @include media("desktopSmall"){
+    font-size:36px;
+  }
+}
+.font-30{
+  font-size:30px;
+}
+
+.font-24{
+  font-size:24px;
+}
+.font-15{
+  font-size:15px;
+}
+.font-big{
+  font-size: 30px;
+  line-height:1.2;
+  @include media("desktopSmall"){
+    font-size:40px;
+  }
+}
+
+.text-shadow{
+  text-shadow: 2px 2px 22px #234D3C;
+}
+.text-yellow{
+  color:$text-yellow;
+}
+.text-black{
+  color:$text-black;
+}
+
+
+ul.list{
+  list-style: none;
+  li{
+    position: relative;
+    padding: 6px 15px;
+    line-height: 1.4;
+    &:before{
+      content:url(../images/icons/list_dot_yellow.png);
+      position: absolute;
+      top: 3px;
+      left: 0;
+    }
+  }
+
+  &.two-column{
+    column-count: 2;
+  }
+}
+
+.pb-80{
+  padding-bottom:80px;
+}
+
+.un-list{
+  list-style: none;
+  li{
+    padding:10px 0;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.6;
+    img{
+      margin-right:10px;
+    }
+    &:first-child{
+      padding-top:0;
+    }
+  }
+}

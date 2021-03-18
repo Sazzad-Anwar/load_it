@@ -1,0 +1,22 @@
+.btn{
+  font-size:16px;
+  font-weight:$regular;
+  min-width:140px;
+  padding:12px 30px;
+  color:#fff;
+  transition: transform 0.6s cubic-bezier(0.5, 1, 0.89, 1);
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+
+  span{
+
+  }
+
+
+  &:hover,
+  &:focus{
+    transition: all 0.6s cubic-bezier(0.5, 1, 0.89, 1);
+  }
+
+}
