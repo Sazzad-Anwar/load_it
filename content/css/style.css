@@ -275,7 +275,7 @@ ul.list.two-column {
 }
 .btn:hover, .btn:focus {
   color: #fff;
-  background-color: #EAAF30;
+  background-color: #DCA225;
   box-shadow: 0px 3px 20px #00000029;
   transition: box-shadow 0.6s cubic-bezier(0.5, 1, 0.89, 1);
 }
@@ -427,7 +427,7 @@ textarea.form-control {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #EAAF30;
+  background-color: #DCA225;
   z-index: 9999;
   display: flex;
   justify-content: center;
@@ -551,11 +551,11 @@ textarea.form-control {
   padding: 0;
 }
 .navbar-brand img {
-  max-height: 70px;
+  height: 70px;
 }
 
 .inner-page .header {
-  background-color: #EAAF30;
+  background-color: #DCA225;
 }
 
 @media (min-width: 576px) {
@@ -574,7 +574,7 @@ textarea.form-control {
 .mobile-nav-head {
   padding: 30px 15px;
   border-bottom: 1px solid #ddd;
-  background-color: #EAAF30;
+  background-color: #DCA225;
 }
 .mobile-nav-head-wrapper .menubar-logo {
   max-width: 150px;
@@ -921,11 +921,11 @@ slider
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  background: #EAAF30;
+  background: #DCA225;
   transition: 0.1s background linear;
 }
 .screens-slider-holder .swiper-button-next:hover, .screens-slider-holder .swiper-button-prev:hover {
-  background: #EAAF30;
+  background: #DCA225;
   transition: 0.1s background linear;
 }
 .screens-slider-holder .swiper-button-next:focus, .screens-slider-holder .swiper-button-prev:focus {
@@ -1020,8 +1020,8 @@ h2, h3 {
   border: 0;
 }
 .input-group.download-link-field .input-group-append .input-group-text {
-  border-color: #EAAF30;
-  background-color: #EAAF30;
+  border-color: #DCA225;
+  background-color: #DCA225;
   color: #fff;
   padding-left: 25px;
   padding-right: 25px;
@@ -1150,7 +1150,7 @@ SERVICE
   background-color: rgba(234, 175, 48, 0.9);
 }
 .service-box.bg-yellow:hover {
-  background-color: #EAAF30;
+  background-color: #DCA225;
 }
 .service-box .bg-layer {
   position: absolute;
