@@ -1361,4 +1361,14 @@ PAGE TITLE
   text-decoration: underline;
 }
 
+.online-payment img{
+  height: 2rem;
+}
+
+@media (max-width: 768px){
+  .online-payment img{
+    margin: 1rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
